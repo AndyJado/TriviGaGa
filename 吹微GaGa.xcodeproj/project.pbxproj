@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		814ED037280EF7A500869193 /* ____App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED036280EF7A500869193 /* ____App.swift */; };
+		814ED03B280EF7A600869193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814ED03A280EF7A600869193 /* Assets.xcassets */; };
+		814ED03E280EF7A600869193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814ED03D280EF7A600869193 /* Preview Assets.xcassets */; };
+		814ED046280EF81000869193 /* FeedBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED045280EF81000869193 /* FeedBacks.swift */; };
+		814ED048280EF84A00869193 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED047280EF84A00869193 /* ViewModifiers.swift */; };
+		814ED04A280EF87200869193 /* PhotoModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED049280EF87200869193 /* PhotoModelFileManager.swift */; };
+		814ED04D280EF8B100869193 /* CloudkitUserBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */; };
+		814ED04F280EF8CB00869193 /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED04E280EF8CB00869193 /* CloudKitUtility.swift */; };
+		814ED052280EF8E800869193 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED051280EF8E800869193 /* Card.swift */; };
+		814ED054280EF8F700869193 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED053280EF8F700869193 /* Theme.swift */; };
+		814ED056280EF91C00869193 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED055280EF91C00869193 /* Data.swift */; };
+		814ED05A280EF95900869193 /* SmallPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED059280EF95900869193 /* SmallPhotoView.swift */; };
+		814ED061280EF9C700869193 /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED05C280EF9C700869193 /* CameraService+Extensions.swift */; };
+		814ED062280EF9C700869193 /* CameraService+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED05D280EF9C700869193 /* CameraService+Enums.swift */; };
+		814ED063280EF9C700869193 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED05E280EF9C700869193 /* PhotoCaptureProcessor.swift */; };
+		814ED064280EF9C700869193 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED05F280EF9C700869193 /* ImageResizer.swift */; };
+		814ED065280EF9C700869193 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED060280EF9C700869193 /* CameraService.swift */; };
+		814ED067280EFA4900869193 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED066280EFA4900869193 /* CameraView.swift */; };
+		814ED069280EFA6E00869193 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED068280EFA6E00869193 /* ToggleButton.swift */; };
+		814ED073280EFA8A00869193 /* StackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED06C280EFA8A00869193 /* StackViewModel.swift */; };
+		814ED075280EFA8A00869193 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED06F280EFA8A00869193 /* CardView.swift */; };
+		814ED077280EFA8A00869193 /* UrlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED071280EFA8A00869193 /* UrlStackView.swift */; };
+		814ED078280EFA8A00869193 /* UrlCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED072280EFA8A00869193 /* UrlCardView.swift */; };
+		814ED07C280EFAA000869193 /* IcloudPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07A280EFAA000869193 /* IcloudPeople.swift */; };
+		814ED07D280EFAA000869193 /* RelationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07B280EFAA000869193 /* RelationDetailView.swift */; };
+		814ED07F280EFAED00869193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07E280EFAED00869193 /* ContentView.swift */; };
+		814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814ED082280EFB1C00869193 /* CloudKit.framework */; };
+		81BEF68628113B0000CABD1C /* guideCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEF68528113B0000CABD1C /* guideCardStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81061D9728127DC800BC7EA4 /* --GaGa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "--GaGa-Info.plist"; sourceTree = "<group>"; };
+		814ED033280EF7A500869193 /* 吹微GaGa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "吹微GaGa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		814ED036280EF7A500869193 /* ____App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____App.swift"; sourceTree = "<group>"; };
+		814ED03A280EF7A600869193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814ED03D280EF7A600869193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		814ED045280EF81000869193 /* FeedBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBacks.swift; sourceTree = "<group>"; };
+		814ED047280EF84A00869193 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		814ED049280EF87200869193 /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelFileManager.swift; sourceTree = "<group>"; };
+		814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitUserBootcamp.swift; sourceTree = "<group>"; };
+		814ED04E280EF8CB00869193 /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
+		814ED051280EF8E800869193 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		814ED053280EF8F700869193 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		814ED055280EF91C00869193 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		814ED059280EF95900869193 /* SmallPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPhotoView.swift; sourceTree = "<group>"; };
+		814ED05C280EF9C700869193 /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Extensions.swift"; sourceTree = "<group>"; };
+		814ED05D280EF9C700869193 /* CameraService+Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Enums.swift"; sourceTree = "<group>"; };
+		814ED05E280EF9C700869193 /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		814ED05F280EF9C700869193 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		814ED060280EF9C700869193 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		814ED066280EFA4900869193 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "吹微相机/Views/Camera/CameraView.swift"; sourceTree = SOURCE_ROOT; };
+		814ED068280EFA6E00869193 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		814ED06C280EFA8A00869193 /* StackViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewModel.swift; sourceTree = "<group>"; };
+		814ED06F280EFA8A00869193 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		814ED071280EFA8A00869193 /* UrlStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlStackView.swift; sourceTree = "<group>"; };
+		814ED072280EFA8A00869193 /* UrlCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlCardView.swift; sourceTree = "<group>"; };
+		814ED07A280EFAA000869193 /* IcloudPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcloudPeople.swift; sourceTree = "<group>"; };
+		814ED07B280EFAA000869193 /* RelationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationDetailView.swift; sourceTree = "<group>"; };
+		814ED07E280EFAED00869193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		814ED080280EFB1600869193 /* 吹微相机.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "吹微相机.entitlements"; sourceTree = "<group>"; };
+		814ED082280EFB1C00869193 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		81BEF68528113B0000CABD1C /* guideCardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guideCardStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814ED030280EF7A500869193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814ED02A280EF7A500869193 = {
+			isa = PBXGroup;
+			children = (
+				81061D9728127DC800BC7EA4 /* --GaGa-Info.plist */,
+				814ED035280EF7A500869193 /* 吹微相机 */,
+				814ED034280EF7A500869193 /* Products */,
+				814ED081280EFB1C00869193 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		814ED034280EF7A500869193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814ED033280EF7A500869193 /* 吹微GaGa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814ED035280EF7A500869193 /* 吹微相机 */ = {
+			isa = PBXGroup;
+			children = (
+				814ED080280EFB1600869193 /* 吹微相机.entitlements */,
+				814ED057280EF93300869193 /* Views */,
+				814ED050280EF8E000869193 /* Models */,
+				814ED044280EF7F200869193 /* Utilities */,
+				814ED036280EF7A500869193 /* ____App.swift */,
+				814ED07E280EFAED00869193 /* ContentView.swift */,
+				814ED03A280EF7A600869193 /* Assets.xcassets */,
+				814ED03C280EF7A600869193 /* Preview Content */,
+			);
+			path = "吹微相机";
+			sourceTree = "<group>";
+		};
+		814ED03C280EF7A600869193 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				814ED03D280EF7A600869193 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		814ED044280EF7F200869193 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				814ED04B280EF88C00869193 /* CloudkitCrud */,
+				814ED045280EF81000869193 /* FeedBacks.swift */,
+				814ED047280EF84A00869193 /* ViewModifiers.swift */,
+				814ED049280EF87200869193 /* PhotoModelFileManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		814ED04B280EF88C00869193 /* CloudkitCrud */ = {
+			isa = PBXGroup;
+			children = (
+				814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */,
+				814ED04E280EF8CB00869193 /* CloudKitUtility.swift */,
+			);
+			path = CloudkitCrud;
+			sourceTree = "<group>";
+		};
+		814ED050280EF8E000869193 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				814ED051280EF8E800869193 /* Card.swift */,
+				814ED053280EF8F700869193 /* Theme.swift */,
+				814ED055280EF91C00869193 /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		814ED057280EF93300869193 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				814ED079280EFAA000869193 /* People */,
+				814ED06A280EFA8A00869193 /* Album */,
+				814ED058280EF93A00869193 /* Camera */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		814ED058280EF93A00869193 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				814ED068280EFA6E00869193 /* ToggleButton.swift */,
+				814ED066280EFA4900869193 /* CameraView.swift */,
+				814ED059280EF95900869193 /* SmallPhotoView.swift */,
+				814ED05B280EF9C700869193 /* CameraModels */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		814ED05B280EF9C700869193 /* CameraModels */ = {
+			isa = PBXGroup;
+			children = (
+				814ED05C280EF9C700869193 /* CameraService+Extensions.swift */,
+				814ED05D280EF9C700869193 /* CameraService+Enums.swift */,
+				814ED05E280EF9C700869193 /* PhotoCaptureProcessor.swift */,
+				814ED05F280EF9C700869193 /* ImageResizer.swift */,
+				814ED060280EF9C700869193 /* CameraService.swift */,
+			);
+			path = CameraModels;
+			sourceTree = "<group>";
+		};
+		814ED06A280EFA8A00869193 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				814ED06B280EFA8A00869193 /* ViewModels */,
+				814ED06D280EFA8A00869193 /* Past */,
+				814ED071280EFA8A00869193 /* UrlStackView.swift */,
+				814ED072280EFA8A00869193 /* UrlCardView.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		814ED06B280EFA8A00869193 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				814ED06C280EFA8A00869193 /* StackViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		814ED06D280EFA8A00869193 /* Past */ = {
+			isa = PBXGroup;
+			children = (
+				81BEF68528113B0000CABD1C /* guideCardStack.swift */,
+				814ED06F280EFA8A00869193 /* CardView.swift */,
+			);
+			path = Past;
+			sourceTree = "<group>";
+		};
+		814ED079280EFAA000869193 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				814ED07A280EFAA000869193 /* IcloudPeople.swift */,
+				814ED07B280EFAA000869193 /* RelationDetailView.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		814ED081280EFB1C00869193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				814ED082280EFB1C00869193 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814ED032280EF7A500869193 /* 吹微GaGa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814ED041280EF7A600869193 /* Build configuration list for PBXNativeTarget "吹微GaGa" */;
+			buildPhases = (
+				814ED02F280EF7A500869193 /* Sources */,
+				814ED030280EF7A500869193 /* Frameworks */,
+				814ED031280EF7A500869193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "吹微GaGa";
+			productName = "吹微相机";
+			productReference = 814ED033280EF7A500869193 /* 吹微GaGa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814ED02B280EF7A500869193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					814ED032280EF7A500869193 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 814ED02E280EF7A500869193 /* Build configuration list for PBXProject "吹微GaGa" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 814ED02A280EF7A500869193;
+			productRefGroup = 814ED034280EF7A500869193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814ED032280EF7A500869193 /* 吹微GaGa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814ED031280EF7A500869193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814ED03E280EF7A600869193 /* Preview Assets.xcassets in Resources */,
+				814ED03B280EF7A600869193 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814ED02F280EF7A500869193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814ED054280EF8F700869193 /* Theme.swift in Sources */,
+				814ED056280EF91C00869193 /* Data.swift in Sources */,
+				814ED046280EF81000869193 /* FeedBacks.swift in Sources */,
+				814ED07C280EFAA000869193 /* IcloudPeople.swift in Sources */,
+				814ED063280EF9C700869193 /* PhotoCaptureProcessor.swift in Sources */,
+				814ED077280EFA8A00869193 /* UrlStackView.swift in Sources */,
+				814ED07D280EFAA000869193 /* RelationDetailView.swift in Sources */,
+				814ED062280EF9C700869193 /* CameraService+Enums.swift in Sources */,
+				814ED037280EF7A500869193 /* ____App.swift in Sources */,
+				814ED075280EFA8A00869193 /* CardView.swift in Sources */,
+				814ED07F280EFAED00869193 /* ContentView.swift in Sources */,
+				814ED064280EF9C700869193 /* ImageResizer.swift in Sources */,
+				814ED065280EF9C700869193 /* CameraService.swift in Sources */,
+				814ED073280EFA8A00869193 /* StackViewModel.swift in Sources */,
+				814ED048280EF84A00869193 /* ViewModifiers.swift in Sources */,
+				814ED05A280EF95900869193 /* SmallPhotoView.swift in Sources */,
+				814ED04D280EF8B100869193 /* CloudkitUserBootcamp.swift in Sources */,
+				814ED067280EFA4900869193 /* CameraView.swift in Sources */,
+				814ED069280EFA6E00869193 /* ToggleButton.swift in Sources */,
+				814ED04F280EF8CB00869193 /* CloudKitUtility.swift in Sources */,
+				814ED04A280EF87200869193 /* PhotoModelFileManager.swift in Sources */,
+				814ED078280EFA8A00869193 /* UrlCardView.swift in Sources */,
+				814ED061280EF9C700869193 /* CameraService+Extensions.swift in Sources */,
+				81BEF68628113B0000CABD1C /* guideCardStack.swift in Sources */,
+				814ED052280EF8E800869193 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		814ED03F280EF7A600869193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		814ED040280EF7A600869193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814ED042280EF7A600869193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "吹微相机/吹微相机.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"吹微相机/Preview Content\"";
+				DEVELOPMENT_TEAM = T2W53FPQ87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "--GaGa-Info.plist";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "\"need enable icloud\"";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"need enable cam\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dday.andyjado;
+				PRODUCT_NAME = "吹微GaGa";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		814ED043280EF7A600869193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "吹微相机/吹微相机.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"吹微相机/Preview Content\"";
+				DEVELOPMENT_TEAM = T2W53FPQ87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "--GaGa-Info.plist";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "\"need enable icloud\"";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"need enable cam\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dday.andyjado;
+				PRODUCT_NAME = "吹微GaGa";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814ED02E280EF7A500869193 /* Build configuration list for PBXProject "吹微GaGa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814ED03F280EF7A600869193 /* Debug */,
+				814ED040280EF7A600869193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814ED041280EF7A600869193 /* Build configuration list for PBXNativeTarget "吹微GaGa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814ED042280EF7A600869193 /* Debug */,
+				814ED043280EF7A600869193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 814ED02B280EF7A500869193 /* Project object */;
+}
