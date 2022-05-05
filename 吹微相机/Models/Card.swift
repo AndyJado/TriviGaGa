@@ -23,7 +23,7 @@ struct CKCard: Hashable,CloudKitableProtocol {
         self.record = record
     }
     
-    init?(name: String, imageURL: URL?,recordName:String) {
+    init?(name: String, imageURL: URL?, recordName:String) {
         let record = CKRecord(recordType: recordName)
         record["name"] = name
         if let url = imageURL {

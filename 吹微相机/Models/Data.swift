@@ -10,6 +10,5 @@ import SwiftUI
 
 enum RecordType: String {
     case OneWayMessage
-    case zifan
 }
 
