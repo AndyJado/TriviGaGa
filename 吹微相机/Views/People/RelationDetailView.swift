@@ -21,8 +21,11 @@ struct RelationDetailView: View {
     var body: some View {
         Form {
             Section(header: Text("You")) {
-                Text(userName)
+                
+                vm.isSignedInToiCloud ? Text(userName) : Text("Not signed to iCloud")
+                
             }
+            .foregroundColor(.green)
             
             Section(header: Text("code")) {
                 TextField(middleCode, text: $tempCode)
@@ -31,8 +34,10 @@ struct RelationDetailView: View {
             Section(header: Text("lovedOne")) {
                 TextField(lovedOneName, text: $templovedOneName)
             }
+            Section(header: Text("Privacy Policies")) {
+                Text("https://github.com/AndyJado/TriviaGaGa")
+            }
 
-            
         }
         .onAppear {
             tempCode = middleCode
@@ -45,6 +50,7 @@ struct RelationDetailView: View {
         .onChange(of: vm.userName) { newValue in
             userName = newValue
         }
+        
 
     }
 }

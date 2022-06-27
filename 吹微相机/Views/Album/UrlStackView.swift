@@ -17,8 +17,8 @@ struct UrlStackView: View {
             
             IcloudPeople()
             // ??
-            
             IcloudRefreshButton
+            
             
             ForEach(0..<vm.inCards.count, id: \.self) { i in
                 UrlCardView(UrlCard: UrlCard(record: vm.inCards[i].record) ?? UrlCard.exampleUrlCard) {
@@ -49,7 +49,9 @@ extension UrlStackView {
                         .resizable()
                         .frame(width: 35, height: 35)
                     //                        .scaledToFill()
-                        .foregroundColor(Theme.orange.mainColor))
+                        .foregroundColor(Theme.orange.mainColor)
+                        
+                )
                 .opacity(vm.inCards.isEmpty ? 1.0 : 0.0)
             
         }

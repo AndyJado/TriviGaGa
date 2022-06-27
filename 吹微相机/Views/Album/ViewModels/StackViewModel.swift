@@ -16,13 +16,13 @@ class CKStackViewModel: ObservableObject {
     
     @Published var text: String = ""
     @Published var inCards: [CKCard] = []
-    @Published var ptr: Int = 0
     
     @AppStorage("LovedOneName") var lovedOneName :String = ""
     @AppStorage("MiddleCode") var middleCode :String = ""
-    @AppStorage("UserName") var userName: String = "defaultUserNameUndifined"
+    @AppStorage("UserName") var userName: String = "reopen the sheet to refresh"
     
     var cancellables = Set<AnyCancellable>()
+    
     init() {
         
 //        fetchItems()
@@ -42,6 +42,7 @@ class CKStackViewModel: ObservableObject {
                         print("CKFETCH: \(error)")
                     case.finished:
                         print("CloudKitUtility.fetch finished! ")
+                        HapticManager.instance.notification(type: .error)
                 }
             } receiveValue: { [weak self] returnedItems in
                 self?.inCards = returnedItems

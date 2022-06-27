@@ -23,10 +23,6 @@ struct ContentView: View {
             
             UrlStackView()
             
-            if userName == "please try again" {
-                guideCardStack()
-            }
-            
             
         }
         

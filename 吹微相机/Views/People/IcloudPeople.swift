@@ -29,7 +29,7 @@ struct IcloudPeople: View {
                 }
             }
             .opacity(0.1)
-            .padding(.top,50)
+            .padding(.top,140)
             Spacer()
         }
         .sheet(isPresented: $isSheetOn) {
