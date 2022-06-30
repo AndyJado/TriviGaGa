@@ -38,7 +38,8 @@ struct UrlStackView: View {
 extension UrlStackView {
     var IcloudRefreshButton: some View {
         Button(action: {
-                vm.fetchItems()
+//                vm.fetchItems()
+            Task { try await vm.asyncFetch() }
         }) {
             Circle()
                 .foregroundColor(Color.black.opacity(0.1))

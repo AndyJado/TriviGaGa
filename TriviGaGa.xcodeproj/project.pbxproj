@@ -32,7 +32,9 @@
 		814ED073280EFA8A00869193 /* StackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED06C280EFA8A00869193 /* StackViewModel.swift */; };
 		814ED07F280EFAED00869193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07E280EFAED00869193 /* ContentView.swift */; };
 		814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814ED082280EFB1C00869193 /* CloudKit.framework */; };
+		8153AC89286DAA8A0033529F /* AsyncCloudKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8153AC88286DAA8A0033529F /* AsyncCloudKit */; };
 		8198B6E4286D2E530096BC19 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8198B6E3286D2E530096BC19 /* Preview Content */; };
+		81CBD5A8286D92A0006CDB78 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBD5A7286D92A0006CDB78 /* ImageFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +47,9 @@
 		81145B86286D391F00A0929B /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CameraService+Extensions.swift"; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/Camera/CameraModels/CameraService+Extensions.swift"; sourceTree = "<absolute>"; };
 		81145B87286D391F00A0929B /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraService.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/Camera/CameraModels/CameraService.swift"; sourceTree = "<absolute>"; };
 		81145B88286D391F00A0929B /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageResizer.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/Camera/CameraModels/ImageResizer.swift"; sourceTree = "<absolute>"; };
-		81145B8E286D393100A0929B /* SmallPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmallPhotoView.swift; path = "吹微相机/Views/Camera/SmallPhotoView.swift"; sourceTree = SOURCE_ROOT; };
-		81145B8F286D393100A0929B /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleButton.swift; path = "吹微相机/Views/Camera/ToggleButton.swift"; sourceTree = SOURCE_ROOT; };
-		81145B90286D393100A0929B /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "吹微相机/Views/Camera/CameraView.swift"; sourceTree = SOURCE_ROOT; };
+		81145B8E286D393100A0929B /* SmallPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmallPhotoView.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/Camera/SmallPhotoView.swift"; sourceTree = "<absolute>"; };
+		81145B8F286D393100A0929B /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleButton.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/Camera/ToggleButton.swift"; sourceTree = "<absolute>"; };
+		81145B90286D393100A0929B /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/Camera/CameraView.swift"; sourceTree = "<absolute>"; };
 		81145B94286D395C00A0929B /* UrlStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UrlStackView.swift; path = "吹微相机/Views/Album/UrlStackView.swift"; sourceTree = SOURCE_ROOT; };
 		81145B95286D395C00A0929B /* UrlCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UrlCardView.swift; path = "吹微相机/Views/Album/UrlCardView.swift"; sourceTree = SOURCE_ROOT; };
 		81145B98286D39A100A0929B /* RelationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RelationDetailView.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Views/People/RelationDetailView.swift"; sourceTree = "<absolute>"; };
@@ -58,13 +60,14 @@
 		814ED045280EF81000869193 /* FeedBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedBacks.swift; path = "吹微相机/Utilities/FeedBacks.swift"; sourceTree = SOURCE_ROOT; };
 		814ED047280EF84A00869193 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewModifiers.swift; path = "吹微相机/Utilities/ViewModifiers.swift"; sourceTree = SOURCE_ROOT; };
 		814ED049280EF87200869193 /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoModelFileManager.swift; path = "吹微相机/Utilities/PhotoModelFileManager.swift"; sourceTree = SOURCE_ROOT; };
-		814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CloudkitUserBootcamp.swift; path = "吹微相机/Utilities/CloudkitCrud/CloudkitUserBootcamp.swift"; sourceTree = SOURCE_ROOT; };
-		814ED04E280EF8CB00869193 /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CloudKitUtility.swift; path = "吹微相机/Utilities/CloudkitCrud/CloudKitUtility.swift"; sourceTree = SOURCE_ROOT; };
+		814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CloudkitUserBootcamp.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Utilities/CloudkitCrud/CloudkitUserBootcamp.swift"; sourceTree = "<absolute>"; };
+		814ED04E280EF8CB00869193 /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CloudKitUtility.swift; path = "/Users/andyjado/Documents/GitHub/TriviGaGa/吹微相机/Utilities/CloudkitCrud/CloudKitUtility.swift"; sourceTree = "<absolute>"; };
 		814ED06C280EFA8A00869193 /* StackViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewModel.swift; sourceTree = "<group>"; };
 		814ED07E280EFAED00869193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "吹微相机/ContentView.swift"; sourceTree = SOURCE_ROOT; };
 		814ED080280EFB1600869193 /* 吹微相机.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "吹微相机.entitlements"; path = "吹微相机/吹微相机.entitlements"; sourceTree = SOURCE_ROOT; };
 		814ED082280EFB1C00869193 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8198B6E3286D2E530096BC19 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "吹微相机/Preview Content"; sourceTree = SOURCE_ROOT; };
+		81CBD5A7286D92A0006CDB78 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8153AC89286DAA8A0033529F /* AsyncCloudKit in Frameworks */,
 				814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				814ED06C280EFA8A00869193 /* StackViewModel.swift */,
+				81CBD5A7286D92A0006CDB78 /* ImageFetcher.swift */,
 			);
 			name = ViewModels;
 			path = "吹微相机/Views/Album/ViewModels";
@@ -235,6 +240,9 @@
 			dependencies = (
 			);
 			name = TriviGaGa;
+			packageProductDependencies = (
+				8153AC88286DAA8A0033529F /* AsyncCloudKit */,
+			);
 			productName = "吹微相机";
 			productReference = 814ED033280EF7A500869193 /* TriviGaGa.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +272,9 @@
 				"zh-Hans",
 			);
 			mainGroup = 814ED02A280EF7A500869193;
+			packageReferences = (
+				8153AC87286DAA8A0033529F /* XCRemoteSwiftPackageReference "AsyncCloudKit" */,
+			);
 			productRefGroup = 814ED034280EF7A500869193 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,6 +310,7 @@
 				81145B8A286D391F00A0929B /* CameraService+Enums.swift in Sources */,
 				81145B9A286D39A100A0929B /* RelationDetailView.swift in Sources */,
 				81145B91286D393100A0929B /* SmallPhotoView.swift in Sources */,
+				81CBD5A8286D92A0006CDB78 /* ImageFetcher.swift in Sources */,
 				814ED037280EF7A500869193 /* ____App.swift in Sources */,
 				81145B97286D395E00A0929B /* UrlCardView.swift in Sources */,
 				814ED07F280EFAED00869193 /* ContentView.swift in Sources */,
@@ -525,6 +537,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8153AC87286DAA8A0033529F /* XCRemoteSwiftPackageReference "AsyncCloudKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:chris-araman/AsyncCloudKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8153AC88286DAA8A0033529F /* AsyncCloudKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8153AC87286DAA8A0033529F /* XCRemoteSwiftPackageReference "AsyncCloudKit" */;
+			productName = AsyncCloudKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 814ED02B280EF7A500869193 /* Project object */;
 }

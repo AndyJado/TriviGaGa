@@ -8,7 +8,7 @@
 import SwiftUI
 import CloudKit
 import Combine
-
+import AsyncCloudKit
 
 
 
@@ -25,12 +25,27 @@ class CKStackViewModel: ObservableObject {
     
     init() {
         
-//        fetchItems()
+    }
+    
+    func asyncFetch() async throws {
+        let messageCode = lovedOneName + middleCode + userName
+        let predicate = NSPredicate(format: "name = %@", argumentArray: [messageCode])
+        let recordType = RecordType.OneWayMessage.rawValue
+        let database = CKContainer.default().publicCloudDatabase
         
+        for try await record in database
+            .performQuery(ofType: recordType, where: predicate, orderBy: [NSSortDescriptor(key: "creationDate", ascending: false)]) {
+            
+            if let card = CKCard(record: record) {
+                Task { @MainActor in
+                    self.inCards.append(card)
+                }
+            }
+        }
     }
     
     func fetchItems() {
-//        let predicate = NSPredicate(value: true)
+        //        let predicate = NSPredicate(value: true)
         let messageCode = lovedOneName + middleCode + userName
         let predicate = NSPredicate(format: "name = %@", argumentArray: [messageCode])
         let recordType = RecordType.OneWayMessage.rawValue
@@ -38,11 +53,11 @@ class CKStackViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { res in
                 switch res {
-                    case .failure(let error):
-                        print("CKFETCH: \(error)")
-                    case.finished:
-                        print("CloudKitUtility.fetch finished! ")
-                        HapticManager.instance.notification(type: .error)
+                case .failure(let error):
+                    print("CKFETCH: \(error)")
+                case.finished:
+                    print("CloudKitUtility.fetch finished! ")
+                    HapticManager.instance.notification(type: .error)
                 }
             } receiveValue: { [weak self] returnedItems in
                 self?.inCards = returnedItems
@@ -61,9 +76,9 @@ class CKStackViewModel: ObservableObject {
                 print("DELETE IS: \(success)")
             }
             .store(in: &cancellables)
-
+        
     }
-
+    
 }
 
 
