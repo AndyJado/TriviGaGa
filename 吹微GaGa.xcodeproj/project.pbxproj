@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		814ED037280EF7A500869193 /* ____App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED036280EF7A500869193 /* ____App.swift */; };
 		814ED03B280EF7A600869193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814ED03A280EF7A600869193 /* Assets.xcassets */; };
-		814ED03E280EF7A600869193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814ED03D280EF7A600869193 /* Preview Assets.xcassets */; };
 		814ED046280EF81000869193 /* FeedBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED045280EF81000869193 /* FeedBacks.swift */; };
 		814ED048280EF84A00869193 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED047280EF84A00869193 /* ViewModifiers.swift */; };
 		814ED04A280EF87200869193 /* PhotoModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED049280EF87200869193 /* PhotoModelFileManager.swift */; };
@@ -33,6 +32,7 @@
 		814ED07D280EFAA000869193 /* RelationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07B280EFAA000869193 /* RelationDetailView.swift */; };
 		814ED07F280EFAED00869193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07E280EFAED00869193 /* ContentView.swift */; };
 		814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814ED082280EFB1C00869193 /* CloudKit.framework */; };
+		8198B6E4286D2E530096BC19 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8198B6E3286D2E530096BC19 /* Preview Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,6 @@
 		814ED033280EF7A500869193 /* 吹微GaGa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "吹微GaGa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814ED036280EF7A500869193 /* ____App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____App.swift"; sourceTree = "<group>"; };
 		814ED03A280EF7A600869193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		814ED03D280EF7A600869193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		814ED045280EF81000869193 /* FeedBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBacks.swift; sourceTree = "<group>"; };
 		814ED047280EF84A00869193 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		814ED049280EF87200869193 /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelFileManager.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		814ED07E280EFAED00869193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		814ED080280EFB1600869193 /* 吹微相机.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "吹微相机.entitlements"; sourceTree = "<group>"; };
 		814ED082280EFB1C00869193 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8198B6E3286D2E530096BC19 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "吹微相机/Preview Content"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,7 @@
 			children = (
 				81061D9728127DC800BC7EA4 /* --GaGa-Info.plist */,
 				814ED035280EF7A500869193 /* 吹微相机 */,
+				8198B6E3286D2E530096BC19 /* Preview Content */,
 				814ED034280EF7A500869193 /* Products */,
 				814ED081280EFB1C00869193 /* Frameworks */,
 			);
@@ -107,17 +108,8 @@
 				814ED036280EF7A500869193 /* ____App.swift */,
 				814ED07E280EFAED00869193 /* ContentView.swift */,
 				814ED03A280EF7A600869193 /* Assets.xcassets */,
-				814ED03C280EF7A600869193 /* Preview Content */,
 			);
 			path = "吹微相机";
-			sourceTree = "<group>";
-		};
-		814ED03C280EF7A600869193 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				814ED03D280EF7A600869193 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		814ED044280EF7F200869193 /* Utilities */ = {
@@ -277,7 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814ED03E280EF7A600869193 /* Preview Assets.xcassets in Resources */,
+				8198B6E4286D2E530096BC19 /* Preview Content in Resources */,
 				814ED03B280EF7A600869193 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
