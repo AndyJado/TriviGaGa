@@ -15,7 +15,6 @@
 		814ED04D280EF8B100869193 /* CloudkitUserBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */; };
 		814ED04F280EF8CB00869193 /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED04E280EF8CB00869193 /* CloudKitUtility.swift */; };
 		814ED052280EF8E800869193 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED051280EF8E800869193 /* Card.swift */; };
-		814ED054280EF8F700869193 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED053280EF8F700869193 /* Theme.swift */; };
 		814ED056280EF91C00869193 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED055280EF91C00869193 /* Data.swift */; };
 		814ED05A280EF95900869193 /* SmallPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED059280EF95900869193 /* SmallPhotoView.swift */; };
 		814ED061280EF9C700869193 /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED05C280EF9C700869193 /* CameraService+Extensions.swift */; };
@@ -33,6 +32,7 @@
 		814ED07F280EFAED00869193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07E280EFAED00869193 /* ContentView.swift */; };
 		814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814ED082280EFB1C00869193 /* CloudKit.framework */; };
 		8198B6E4286D2E530096BC19 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8198B6E3286D2E530096BC19 /* Preview Content */; };
+		81D31C73286D372800D06815 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D31C72286D372800D06815 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,6 @@
 		814ED04C280EF8B100869193 /* CloudkitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitUserBootcamp.swift; sourceTree = "<group>"; };
 		814ED04E280EF8CB00869193 /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
 		814ED051280EF8E800869193 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		814ED053280EF8F700869193 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		814ED055280EF91C00869193 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		814ED059280EF95900869193 /* SmallPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPhotoView.swift; sourceTree = "<group>"; };
 		814ED05C280EF9C700869193 /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Extensions.swift"; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		814ED080280EFB1600869193 /* 吹微相机.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "吹微相机.entitlements"; sourceTree = "<group>"; };
 		814ED082280EFB1C00869193 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8198B6E3286D2E530096BC19 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "吹微相机/Preview Content"; sourceTree = "<group>"; };
+		81D31C72286D372800D06815 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				814ED051280EF8E800869193 /* Card.swift */,
-				814ED053280EF8F700869193 /* Theme.swift */,
+				81D31C72286D372800D06815 /* Theme.swift */,
 				814ED055280EF91C00869193 /* Data.swift */,
 			);
 			path = Models;
@@ -281,10 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814ED054280EF8F700869193 /* Theme.swift in Sources */,
 				814ED056280EF91C00869193 /* Data.swift in Sources */,
 				814ED046280EF81000869193 /* FeedBacks.swift in Sources */,
 				814ED07C280EFAA000869193 /* IcloudPeople.swift in Sources */,
+				81D31C73286D372800D06815 /* Theme.swift in Sources */,
 				814ED063280EF9C700869193 /* PhotoCaptureProcessor.swift in Sources */,
 				814ED077280EFA8A00869193 /* UrlStackView.swift in Sources */,
 				814ED07D280EFAA000869193 /* RelationDetailView.swift in Sources */,
