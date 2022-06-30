@@ -33,9 +33,9 @@ struct IcloudPeople: View {
             Spacer()
         }
         .sheet(isPresented: $isSheetOn) {
-            NavigationView {
-                RelationDetailView()
-            }
+            RelationDetailView()
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
         }
         
         
