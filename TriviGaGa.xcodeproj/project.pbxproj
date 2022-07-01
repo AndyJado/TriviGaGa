@@ -10,14 +10,6 @@
 		81145B81286D38D500A0929B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B7E286D38D500A0929B /* Card.swift */; };
 		81145B82286D38D500A0929B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B7F286D38D500A0929B /* Data.swift */; };
 		81145B83286D38D500A0929B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B80286D38D500A0929B /* Theme.swift */; };
-		81145B89286D391F00A0929B /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B84286D391F00A0929B /* PhotoCaptureProcessor.swift */; };
-		81145B8A286D391F00A0929B /* CameraService+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B85286D391F00A0929B /* CameraService+Enums.swift */; };
-		81145B8B286D391F00A0929B /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B86286D391F00A0929B /* CameraService+Extensions.swift */; };
-		81145B8C286D391F00A0929B /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B87286D391F00A0929B /* CameraService.swift */; };
-		81145B8D286D391F00A0929B /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B88286D391F00A0929B /* ImageResizer.swift */; };
-		81145B91286D393100A0929B /* SmallPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B8E286D393100A0929B /* SmallPhotoView.swift */; };
-		81145B92286D393100A0929B /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B8F286D393100A0929B /* ToggleButton.swift */; };
-		81145B93286D393100A0929B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B90286D393100A0929B /* CameraView.swift */; };
 		81145B96286D395E00A0929B /* UrlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B94286D395C00A0929B /* UrlStackView.swift */; };
 		81145B97286D395E00A0929B /* UrlCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B95286D395C00A0929B /* UrlCardView.swift */; };
 		81145B9A286D39A100A0929B /* RelationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145B98286D39A100A0929B /* RelationDetailView.swift */; };
@@ -45,14 +37,6 @@
 		81145B7E286D38D500A0929B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = "吹微相机/Models/Card.swift"; sourceTree = SOURCE_ROOT; };
 		81145B7F286D38D500A0929B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "吹微相机/Models/Data.swift"; sourceTree = SOURCE_ROOT; };
 		81145B80286D38D500A0929B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = "吹微相机/Models/Theme.swift"; sourceTree = SOURCE_ROOT; };
-		81145B84286D391F00A0929B /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCaptureProcessor.swift; path = "吹微相机/Views/Camera/CameraModels/PhotoCaptureProcessor.swift"; sourceTree = SOURCE_ROOT; };
-		81145B85286D391F00A0929B /* CameraService+Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CameraService+Enums.swift"; path = "吹微相机/Views/Camera/CameraModels/CameraService+Enums.swift"; sourceTree = SOURCE_ROOT; };
-		81145B86286D391F00A0929B /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CameraService+Extensions.swift"; path = "吹微相机/Views/Camera/CameraModels/CameraService+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		81145B87286D391F00A0929B /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraService.swift; path = "吹微相机/Views/Camera/CameraModels/CameraService.swift"; sourceTree = SOURCE_ROOT; };
-		81145B88286D391F00A0929B /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageResizer.swift; path = "吹微相机/Views/Camera/CameraModels/ImageResizer.swift"; sourceTree = SOURCE_ROOT; };
-		81145B8E286D393100A0929B /* SmallPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmallPhotoView.swift; path = "吹微相机/Views/Camera/SmallPhotoView.swift"; sourceTree = SOURCE_ROOT; };
-		81145B8F286D393100A0929B /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleButton.swift; path = "吹微相机/Views/Camera/ToggleButton.swift"; sourceTree = SOURCE_ROOT; };
-		81145B90286D393100A0929B /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "吹微相机/Views/Camera/CameraView.swift"; sourceTree = SOURCE_ROOT; };
 		81145B94286D395C00A0929B /* UrlStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UrlStackView.swift; path = "吹微相机/Views/Album/UrlStackView.swift"; sourceTree = SOURCE_ROOT; };
 		81145B95286D395C00A0929B /* UrlCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UrlCardView.swift; path = "吹微相机/Views/Album/UrlCardView.swift"; sourceTree = SOURCE_ROOT; };
 		81145B98286D39A100A0929B /* RelationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RelationDetailView.swift; path = "吹微相机/Views/People/RelationDetailView.swift"; sourceTree = SOURCE_ROOT; };
@@ -161,35 +145,9 @@
 				8171C2E4286ECC7600517DD5 /* AsyncCam */,
 				814ED079280EFAA000869193 /* People */,
 				814ED06A280EFA8A00869193 /* Album */,
-				814ED058280EF93A00869193 /* Camera */,
 			);
 			name = Views;
 			path = "吹微相机/Views";
-			sourceTree = SOURCE_ROOT;
-		};
-		814ED058280EF93A00869193 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				81145B90286D393100A0929B /* CameraView.swift */,
-				81145B8E286D393100A0929B /* SmallPhotoView.swift */,
-				81145B8F286D393100A0929B /* ToggleButton.swift */,
-				814ED05B280EF9C700869193 /* CameraModels */,
-			);
-			name = Camera;
-			path = "吹微相机/Views/Camera";
-			sourceTree = SOURCE_ROOT;
-		};
-		814ED05B280EF9C700869193 /* CameraModels */ = {
-			isa = PBXGroup;
-			children = (
-				81145B87286D391F00A0929B /* CameraService.swift */,
-				81145B85286D391F00A0929B /* CameraService+Enums.swift */,
-				81145B86286D391F00A0929B /* CameraService+Extensions.swift */,
-				81145B88286D391F00A0929B /* ImageResizer.swift */,
-				81145B84286D391F00A0929B /* PhotoCaptureProcessor.swift */,
-			);
-			name = CameraModels;
-			path = "吹微相机/Views/Camera/CameraModels";
 			sourceTree = SOURCE_ROOT;
 		};
 		814ED06A280EFA8A00869193 /* Album */ = {
@@ -318,16 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81145B8C286D391F00A0929B /* CameraService.swift in Sources */,
-				81145B89286D391F00A0929B /* PhotoCaptureProcessor.swift in Sources */,
-				81145B8B286D391F00A0929B /* CameraService+Extensions.swift in Sources */,
 				814ED046280EF81000869193 /* FeedBacks.swift in Sources */,
 				81145B96286D395E00A0929B /* UrlStackView.swift in Sources */,
 				8171C2E6286ECC9D00517DD5 /* CamDataModel.swift in Sources */,
 				81145B83286D38D500A0929B /* Theme.swift in Sources */,
-				81145B8A286D391F00A0929B /* CameraService+Enums.swift in Sources */,
 				81145B9A286D39A100A0929B /* RelationDetailView.swift in Sources */,
-				81145B91286D393100A0929B /* SmallPhotoView.swift in Sources */,
 				814ED037280EF7A500869193 /* ____App.swift in Sources */,
 				81145B97286D395E00A0929B /* UrlCardView.swift in Sources */,
 				8171C2E8286ECCB100517DD5 /* CamKernel.swift in Sources */,
@@ -339,10 +292,7 @@
 				81145B82286D38D500A0929B /* Data.swift in Sources */,
 				81145B81286D38D500A0929B /* Card.swift in Sources */,
 				814ED04F280EF8CB00869193 /* CloudKitUtility.swift in Sources */,
-				81145B93286D393100A0929B /* CameraView.swift in Sources */,
-				81145B8D286D391F00A0929B /* ImageResizer.swift in Sources */,
 				81145B9B286D39A100A0929B /* IcloudPeople.swift in Sources */,
-				81145B92286D393100A0929B /* ToggleButton.swift in Sources */,
 				814ED04A280EF87200869193 /* PhotoModelFileManager.swift in Sources */,
 				8171C2E3286ECC3E00517DD5 /* AsyncCamView.swift in Sources */,
 			);
