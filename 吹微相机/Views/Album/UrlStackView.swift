@@ -29,16 +29,12 @@ struct UrlStackView: View {
                 .stacked(at: i, in: vm.inCards.count)
             }
         }
-        .onChange(of: scenePhase) { phase in
-            if phase == .active { vm.fetchItems() }
-        }
     }
 }
 
 extension UrlStackView {
     var IcloudRefreshButton: some View {
         Button(action: {
-//                vm.fetchItems()
             Task { try await vm.asyncFetch() }
         }) {
             Circle()

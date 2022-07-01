@@ -44,27 +44,6 @@ class CKStackViewModel: ObservableObject {
         }
     }
     
-    func fetchItems() {
-        //        let predicate = NSPredicate(value: true)
-        let messageCode = lovedOneName + middleCode + userName
-        let predicate = NSPredicate(format: "name = %@", argumentArray: [messageCode])
-        let recordType = RecordType.OneWayMessage.rawValue
-        CloudKitUtility.fetch(predicate: predicate, recordType: recordType,sortDescriptions: [NSSortDescriptor(key: "creationDate", ascending: false)])
-            .receive(on: DispatchQueue.main)
-            .sink { res in
-                switch res {
-                case .failure(let error):
-                    print("CKFETCH: \(error)")
-                case.finished:
-                    print("CloudKitUtility.fetch finished! ")
-                    HapticManager.instance.notification(type: .error)
-                }
-            } receiveValue: { [weak self] returnedItems in
-                self?.inCards = returnedItems
-            }
-            .store(in: &cancellables)
-    }
-    
     func deleteItem(indexSet: IndexSet) {
         guard let index = indexSet.first else { return }
         let item = inCards[index]
