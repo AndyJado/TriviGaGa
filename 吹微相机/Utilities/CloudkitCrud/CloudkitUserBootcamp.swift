@@ -17,9 +17,14 @@ class CloudKitUserBootcampViewModel: ObservableObject {
     var cancellables = Set<AnyCancellable>()
     
     init() {
-        getiCloudStatus()
-        requestPermission()
-        getCurrentUserName()
+//        getiCloudStatus()
+//        requestPermission()
+//        getCurrentUserName()
+        Task{
+            getiCloudStatus()
+            try await CloudKitUtility.request()
+            getCurrentUserName()
+        }
     }
     
     private func getiCloudStatus() {

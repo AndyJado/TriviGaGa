@@ -70,6 +70,21 @@ extension CloudKitUtility {
         }
     }
     
+    static func request() async throws {
+        
+        let container = CKContainer.default()
+        
+        let status = try await container.applicationPermissionStatus(for: [.userDiscoverability])
+        
+        switch status {
+        case .granted:
+            break
+        default:
+            try await container.requestApplicationPermission([.userDiscoverability])
+        }
+        
+    }
+    
     static func requestApplicationPermission() -> Future<Bool, Error> {
         Future { promise in
             CloudKitUtility.requestApplicationPermission { result in
