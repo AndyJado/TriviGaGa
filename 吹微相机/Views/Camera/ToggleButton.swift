@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ToggleButton: View {
 //  @Binding var selected: Bool
-    var action: () -> Void = {()}
+    let action: () -> Void
     
   var body: some View {
       Button(action: action) {
@@ -31,7 +31,7 @@ struct ToggleButton_Previews: PreviewProvider {
     ZStack {
       Color.black
         .ignoresSafeArea()
-        ToggleButton()
+        ToggleButton(action: {})
     }
   }
 }

@@ -19,7 +19,9 @@ struct ContentView: View {
                 .ignoresSafeArea()
                 .opacity(0.89)
             
-            CameraView()
+//            CameraView()
+            AsyncCamView()
+                .padding(.bottom, 20)
             
             UrlStackView()
             

@@ -33,6 +33,10 @@
 		814ED07F280EFAED00869193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED07E280EFAED00869193 /* ContentView.swift */; };
 		814ED083280EFB1C00869193 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814ED082280EFB1C00869193 /* CloudKit.framework */; };
 		8153AC89286DAA8A0033529F /* AsyncCloudKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8153AC88286DAA8A0033529F /* AsyncCloudKit */; };
+		8171C2E3286ECC3E00517DD5 /* AsyncCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171C2E2286ECC3E00517DD5 /* AsyncCamView.swift */; };
+		8171C2E6286ECC9D00517DD5 /* CamDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171C2E5286ECC9D00517DD5 /* CamDataModel.swift */; };
+		8171C2E8286ECCB100517DD5 /* CamKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171C2E7286ECCB100517DD5 /* CamKernel.swift */; };
+		8171C2EA286ED18800517DD5 /* ThumbNailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171C2E9286ED18800517DD5 /* ThumbNailView.swift */; };
 		8198B6E4286D2E530096BC19 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8198B6E3286D2E530096BC19 /* Preview Content */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		814ED07E280EFAED00869193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "吹微相机/ContentView.swift"; sourceTree = SOURCE_ROOT; };
 		814ED080280EFB1600869193 /* 吹微相机.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "吹微相机.entitlements"; path = "吹微相机/吹微相机.entitlements"; sourceTree = SOURCE_ROOT; };
 		814ED082280EFB1C00869193 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8171C2E2286ECC3E00517DD5 /* AsyncCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCamView.swift; sourceTree = "<group>"; };
+		8171C2E5286ECC9D00517DD5 /* CamDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamDataModel.swift; sourceTree = "<group>"; };
+		8171C2E7286ECCB100517DD5 /* CamKernel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamKernel.swift; sourceTree = "<group>"; };
+		8171C2E9286ED18800517DD5 /* ThumbNailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbNailView.swift; sourceTree = "<group>"; };
 		8198B6E3286D2E530096BC19 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "吹微相机/Preview Content"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -150,6 +158,7 @@
 		814ED057280EF93300869193 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8171C2E4286ECC7600517DD5 /* AsyncCam */,
 				814ED079280EFAA000869193 /* People */,
 				814ED06A280EFA8A00869193 /* Album */,
 				814ED058280EF93A00869193 /* Camera */,
@@ -220,6 +229,17 @@
 			);
 			name = Frameworks;
 			sourceTree = SOURCE_ROOT;
+		};
+		8171C2E4286ECC7600517DD5 /* AsyncCam */ = {
+			isa = PBXGroup;
+			children = (
+				8171C2E2286ECC3E00517DD5 /* AsyncCamView.swift */,
+				8171C2E5286ECC9D00517DD5 /* CamDataModel.swift */,
+				8171C2E7286ECCB100517DD5 /* CamKernel.swift */,
+				8171C2E9286ED18800517DD5 /* ThumbNailView.swift */,
+			);
+			path = AsyncCam;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -303,16 +323,19 @@
 				81145B8B286D391F00A0929B /* CameraService+Extensions.swift in Sources */,
 				814ED046280EF81000869193 /* FeedBacks.swift in Sources */,
 				81145B96286D395E00A0929B /* UrlStackView.swift in Sources */,
+				8171C2E6286ECC9D00517DD5 /* CamDataModel.swift in Sources */,
 				81145B83286D38D500A0929B /* Theme.swift in Sources */,
 				81145B8A286D391F00A0929B /* CameraService+Enums.swift in Sources */,
 				81145B9A286D39A100A0929B /* RelationDetailView.swift in Sources */,
 				81145B91286D393100A0929B /* SmallPhotoView.swift in Sources */,
 				814ED037280EF7A500869193 /* ____App.swift in Sources */,
 				81145B97286D395E00A0929B /* UrlCardView.swift in Sources */,
+				8171C2E8286ECCB100517DD5 /* CamKernel.swift in Sources */,
 				814ED07F280EFAED00869193 /* ContentView.swift in Sources */,
 				814ED073280EFA8A00869193 /* StackViewModel.swift in Sources */,
 				814ED048280EF84A00869193 /* ViewModifiers.swift in Sources */,
 				814ED04D280EF8B100869193 /* CloudkitUserBootcamp.swift in Sources */,
+				8171C2EA286ED18800517DD5 /* ThumbNailView.swift in Sources */,
 				81145B82286D38D500A0929B /* Data.swift in Sources */,
 				81145B81286D38D500A0929B /* Card.swift in Sources */,
 				814ED04F280EF8CB00869193 /* CloudKitUtility.swift in Sources */,
@@ -321,6 +344,7 @@
 				81145B9B286D39A100A0929B /* IcloudPeople.swift in Sources */,
 				81145B92286D393100A0929B /* ToggleButton.swift in Sources */,
 				814ED04A280EF87200869193 /* PhotoModelFileManager.swift in Sources */,
+				8171C2E3286ECC3E00517DD5 /* AsyncCamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

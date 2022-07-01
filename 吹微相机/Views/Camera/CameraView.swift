@@ -100,8 +100,6 @@ struct CameraView: View {
                 
             }
             .padding(.horizontal, 30)
-            
-
         }
     }
 }

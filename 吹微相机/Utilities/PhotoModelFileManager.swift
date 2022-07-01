@@ -63,6 +63,22 @@ class PhotoModelFileManager {
         }
     }
     
+    func addImageData(key: String, data: Data?) {
+        guard
+            let data = data,
+            let url = getImagePath(key: key)
+        else {
+            return
+        }
+        
+        do {
+            try data.write(to: url)
+            print("saved to: \(url)")
+        } catch let error {
+            print("Error adding data to file:\(error)")
+        }
+    }
+    
     func addCompressed(key: String, value: Photo!) {
         guard
             let data = value.compressedData,
