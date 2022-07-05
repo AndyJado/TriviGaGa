@@ -13,20 +13,18 @@ struct UrlStackView: View {
     @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
-        ZStack {
-            
-            IcloudPeople()
-            // ??
-            IcloudRefreshButton
-            
-            
-            ForEach(0..<vm.inCards.count, id: \.self) { i in
-                UrlCardView(UrlCard: UrlCard(record: vm.inCards[i].record) ?? UrlCard.exampleUrlCard) {
-                    withAnimation {
-                        vm.deleteItem(indexSet: [i])
+        Group {
+            if vm.inCards.isEmpty {
+                IcloudRefreshButton
+            } else {
+                ForEach(0..<vm.inCards.count, id: \.self) { i in
+                    UrlCardView(UrlCard: UrlCard(record: vm.inCards[i].record) ?? UrlCard.exampleUrlCard) {
+                        withAnimation {
+                            vm.deleteItem(indexSet: [i])
+                        }
                     }
+                    .stacked(at: i, in: vm.inCards.count)
                 }
-                .stacked(at: i, in: vm.inCards.count)
             }
         }
     }
@@ -40,16 +38,16 @@ extension UrlStackView {
             Circle()
                 .foregroundColor(Color.black.opacity(0.1))
                 .frame(width: 50, height: 50, alignment: .center)
-                .opacity(vm.inCards.isEmpty ? 1.0 : 0.0)
-                .overlay(
-                    Image(systemName: "icloud.circle")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                    //                        .scaledToFill()
-                        .foregroundColor(Theme.orange.mainColor)
-                        
-                )
-                .opacity(vm.inCards.isEmpty ? 1.0 : 0.0)
+                .overlay {
+                    if vm.isFetching {
+                        ProgressView()
+                    } else {
+                        Image(systemName: "icloud.circle")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                            .foregroundColor(Theme.orange.mainColor)
+                    }
+                }
             
         }
         

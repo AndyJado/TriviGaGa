@@ -16,6 +16,9 @@ class CKStackViewModel: ObservableObject {
     
     @Published var text: String = ""
     @Published var inCards: [CKCard] = []
+    @Published var isFetching = false
+    
+    
     
     @AppStorage("LovedOneName") var lovedOneName :String = ""
     @AppStorage("MiddleCode") var middleCode :String = ""
@@ -28,6 +31,10 @@ class CKStackViewModel: ObservableObject {
     }
     
     func asyncFetch() async throws {
+        Task{ @MainActor in
+            self.isFetching.toggle()
+        }
+        
         let messageCode = lovedOneName + middleCode + userName
         let predicate = NSPredicate(format: "name = %@", argumentArray: [messageCode])
         let recordType = RecordType.OneWayMessage.rawValue
@@ -42,6 +49,11 @@ class CKStackViewModel: ObservableObject {
                 }
             }
         }
+        
+        Task{ @MainActor in
+            self.isFetching.toggle()
+        }
+        
     }
     
     func deleteItem(indexSet: IndexSet) {

@@ -11,22 +11,20 @@ struct ContentView: View {
     
     @AppStorage("UserName") var userName: String = "please try again"
     
-    var theme: Theme = .ansiGreen
+    let theme: Theme = .ansiGreen
     
     var body: some View {
         ZStack{
-            theme.mainColor
-                .ignoresSafeArea()
-                .opacity(0.89)
             
-//            CameraView()
+            IcloudPeople()
+            
             AsyncCamView()
-                .padding(.bottom, 20)
             
             UrlStackView()
             
-            
         }
+        .background(theme.mainColor.opacity(0.89))
+        .ignoresSafeArea()
         
     }
     

@@ -19,6 +19,7 @@ struct AsyncCamView: View {
                 ThumbNailView(photo: $model.thumbnailImage, imageData: $model.ImageData)
                 Spacer()
                 TakeButton
+                    .padding(.bottom, 15)
                 Spacer()
                 flipCameraButton
                 
