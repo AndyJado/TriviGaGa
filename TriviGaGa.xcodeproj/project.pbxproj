@@ -30,6 +30,7 @@
 		8171C2E8286ECCB100517DD5 /* CamKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171C2E7286ECCB100517DD5 /* CamKernel.swift */; };
 		8171C2EA286ED18800517DD5 /* ThumbNailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171C2E9286ED18800517DD5 /* ThumbNailView.swift */; };
 		8198B6E4286D2E530096BC19 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8198B6E3286D2E530096BC19 /* Preview Content */; };
+		81E2D87C2874273B00648949 /* CantacList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2D87B2874273B00648949 /* CantacList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8171C2E7286ECCB100517DD5 /* CamKernel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamKernel.swift; sourceTree = "<group>"; };
 		8171C2E9286ED18800517DD5 /* ThumbNailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbNailView.swift; sourceTree = "<group>"; };
 		8198B6E3286D2E530096BC19 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "吹微相机/Preview Content"; sourceTree = SOURCE_ROOT; };
+		81E2D87B2874273B00648949 /* CantacList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantacList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				814ED045280EF81000869193 /* FeedBacks.swift */,
 				814ED047280EF84A00869193 /* ViewModifiers.swift */,
 				814ED049280EF87200869193 /* PhotoModelFileManager.swift */,
+				81E2D87B2874273B00648949 /* CantacList.swift */,
 			);
 			name = Utilities;
 			path = "吹微相机/Utilities";
@@ -281,6 +284,7 @@
 				8171C2E6286ECC9D00517DD5 /* CamDataModel.swift in Sources */,
 				81145B83286D38D500A0929B /* Theme.swift in Sources */,
 				81145B9A286D39A100A0929B /* RelationDetailView.swift in Sources */,
+				81E2D87C2874273B00648949 /* CantacList.swift in Sources */,
 				814ED037280EF7A500869193 /* ____App.swift in Sources */,
 				81145B97286D395E00A0929B /* UrlCardView.swift in Sources */,
 				8171C2E8286ECCB100517DD5 /* CamKernel.swift in Sources */,
